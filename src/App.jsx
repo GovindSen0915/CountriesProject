@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Header from './components/Header'
+import SearchBar from './components/SearchBar'
+import SelectMenu from './components/SelectMenu'
 import './App.css'
+import CountriesList from './components/CountriesList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h2>Countries Project</h2>
+    <Header />
+    <main>
+
+
+    <div className="search-filter-container">
+
+    <SearchBar />
+    <SelectMenu />
+
+    </div>
+    <CountriesList />
+    </main>
     </>
   )
 }
