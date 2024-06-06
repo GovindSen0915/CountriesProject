@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-// import './CountryDetail.css'
+import './CountryDetail.css'
 
 export default function CountryDetail() {
   const countryName = new URLSearchParams(location.search).get('name')
